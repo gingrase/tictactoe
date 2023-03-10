@@ -1,0 +1,144 @@
+/* <!-- ------------------------------------------------------------------------------------------------------ -->
+   <!-- -------------------------------------------  GLOBAL  ------------------------------------------------- -->
+   <!-- ------------------------------------------------------------------------------------------------------ --> */   
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+.globalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+#resultScreen {
+    display: none;
+}
+
+#boardScreen {
+    display: none;
+}
+
+#anotherGame {
+    display: none;
+}
+
+.title {
+    font-size: 70px;
+    font-family: arial;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+/* <!-- ------------------------------------------------------------------------------------------------------ -->
+   <!-- --------------------------------------------  START  ------------------------------------------------- -->
+   <!-- ------------------------------------------------------------------------------------------------------ --> */
+
+.gameForm {}
+
+.gameForm-fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+    font-family: "arial";
+}
+  
+.gameForm-input {
+   flex-basis: 100%; 
+}
+  
+.gameForm-input label {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+.gameForm-input input {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.gameForm-input select {
+    width: 100%; 
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.start {
+    text-align: center;
+}
+  
+.start button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 7px;
+    padding: 10px 40px;
+    margin: 20px;
+}
+  
+.start button:active {
+    background-color: green;
+}
+
+
+
+/* <!-- ------------------------------------------------------------------------------------------------------ -->
+   <!-- --------------------------------------------  BOARD  ------------------------------------------------- -->
+   <!-- ------------------------------------------------------------------------------------------------------ --> */   
+
+.grid {
+    display: grid;
+    grid-template-columns: 65px 65px 65px;
+    grid-template-rows: 65px 65px 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    font-family: "arial";
+    font-weight: 600;
+    font-size: 54px;
+    background-color: white;
+    color: #12232E;
+/*
+    border-bottom: 3px solid #203647;
+    border-right: 3px solid #203647; 
+*/
+    border: 2px solid #203647;
+    text-align: center;
+    margin: 0px;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+
+
+/* <!-- ------------------------------------------------------------------------------------------------------ -->
+   <!-- --------------------------------------------  WINNER  ------------------------------------------------ -->
+   <!-- ------------------------------------------------------------------------------------------------------ --> */
+
+.result {
+    font-size: 70px;
+    font-family: arial;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}   

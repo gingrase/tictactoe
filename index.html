@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <div class="globalContainer">
+
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------  START  ------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------ -->    
+    <div id="startScreen" class="modal"> 
+      <div id="title" class="title">
+        Tic Tac Toe !
+      </div>  
+
+      <form action="" method="get" class="gameForm" onkeydown="return event.key != 'Enter';">
+        <div class="gameForm-fieldset">
+          <div class="gameForm-input">
+            <label for="player1Name">Player 1 Name</label>
+            <input id="player1Name" name="player1Name" type="text" placeholder="Player 1 name" />
+          </div>
+
+          <div class="gameForm-input">
+            <label for="player2Name">Player 2 Name (will play second, with the O's)</label>
+            <input id="player2Name" name="player2Name" type="text" placeholder="Player 2 name" disabled />
+          </div>
+        
+          <div class="gameForm-input">
+            <label for="type">Type of Game</label>
+            <div class="selectDropdown">
+              <select name="type" id="type">
+                <option value="Easy">Easy AI Opponent</option>
+                <option value="Unbeatable">Unbeatable AI Opponent</option>
+                <option value="Two">2 players</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="gameForm-input selectDropdown">
+            <label for="marks">Which marks do you want to play (X's start)?</label>
+            <div class="selectDropdown">
+              <select name="marks" id="marks">
+                <option value="X">X</option>
+                <option value="O">O</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="start">
+          <button id="start">Start</button>
+        </div>
+      </form>
+    </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------  BOARD  ------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------ -->    
+    <div id="boardScreen" class="mainScreen">
+      <div class="grid">
+        <div class="square" id="0">&nbsp;</div>
+        <div class="square" id="1">&nbsp;</div>
+        <div class="square" id="2">&nbsp;</div>
+        <div class="square" id="3">&nbsp;</div>
+        <div class="square" id="4">&nbsp;</div>
+        <div class="square" id="5">&nbsp;</div>
+        <div class="square" id="6">&nbsp;</div>
+        <div class="square" id="7">&nbsp;</div>
+        <div class="square" id="8">&nbsp;</div>
+      </div>
+    </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<!-- -------------------------------------------  WINNER  ------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------ -->    
+    <div id="resultScreen" class="modal">
+      <div class="winner">
+        <p class="Title">The Winner is</p>
+        <p class="result" id="result"></p>
+      </div>
+    </div>
+
+
+
+    <div id="anotherGame" class="start">
+      <button id="restart">Restart ?</button>
+    </div>
+  </div>
+</body>
+
+</html>
