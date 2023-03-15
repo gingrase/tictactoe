@@ -34,6 +34,14 @@
     text-align: center;
 }
 
+.subtitle {
+    font-size: 50px;
+    font-family: arial;
+    font-weight: 900;
+    text-align: center;
+    margin: 16px;
+}
+
 
 
 /* <!-- ------------------------------------------------------------------------------------------------------ -->
@@ -108,6 +116,7 @@
     grid-template-rows: 65px 65px 65px;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 
 .square {
